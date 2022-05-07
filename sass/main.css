@@ -1,0 +1,372 @@
+/*--------------- Font Style ----------------*/
+@font-face {
+  font-family: "Inter-Black";
+  src: url("../assets/fonts/inter/Inter-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../assets/fonts/inter/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../assets/fonts/inter/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("../assets/fonts/inter/Inter-Regular.ttf") format("truetype");
+}
+
+.font-inter-black {
+  font-family: "Inter-Black", sans-serif;
+}
+
+.font-inter-bold {
+  font-family: "Inter-Bold", sans-serif;
+}
+
+.font-inter-medium {
+  font-family: "Inter-Medium", sans-serif;
+}
+
+.font-inter-regular {
+  font-family: "Inter-Regular", sans-serif;
+}
+
+/*------------------ Color Style ------------------*/
+/*----------------- Icons Style -----------------*/
+.icon {
+  width: 18px;
+  height: 18px;
+  background-color: #F1B301;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+}
+
+.icon.icon-phone {
+  mask-image: url("../assets/icons/phone.svg");
+  -webkit-mask-image: url("../assets/icons/phone.svg");
+}
+
+.icon.icon-burger {
+  mask-image: url("../assets/icons/burger-menu.svg");
+  -webkit-mask-image: url("../assets/icons/burger-menu.svg");
+}
+
+.icon.icon-youtube {
+  mask-image: url("../assets/icons/youtube.svg");
+  -webkit-mask-image: url("../assets/icons/youtube.svg");
+}
+
+.icon.icon-facebook {
+  mask-image: url("../assets/icons/facebook.svg");
+  -webkit-mask-image: url("../assets/icons/facebook.svg");
+}
+
+.icon.icon-instagram {
+  mask-image: url("../assets/icons/instagram.svg");
+  -webkit-mask-image: url("../assets/icons/instagram.svg");
+}
+
+.icon.icon-telegram {
+  mask-image: url("../assets/icons/telegram.svg");
+  -webkit-mask-image: url("../assets/icons/telegram.svg");
+}
+
+.icon.icon-tik-tok {
+  mask-image: url("../assets/icons/tik-tok.svg");
+  -webkit-mask-image: url("../assets/icons/tik-tok.svg");
+}
+
+.icon.icon-play {
+  mask-image: url("../assets/icons/play.svg");
+  -webkit-mask-image: url("../assets/icons/play.svg");
+}
+
+.icon.icon-store {
+  mask-image: url("../assets/icons/store.svg");
+  -webkit-mask-image: url("../assets/icons/store.svg");
+}
+
+/*---------------------- Main Styles ---------------------*/
+html {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+}
+
+html body .top {
+  width: 100%;
+  height: 800px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #ffffff), color-stop(40%, #800A7A));
+  background-image: linear-gradient(to right, #ffffff 60%, #800A7A 40%);
+}
+
+@media (max-width: 667px) {
+  html body .top {
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), color-stop(39%, #800A7A));
+    background-image: linear-gradient(to bottom, #ffffff 40%, #800A7A 39%);
+  }
+}
+
+html body .top .navbar .container .col-60 {
+  width: 60%;
+}
+
+html body .top .navbar .container .col-60 .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #222124;
+}
+
+html body .top .navbar .container .col-40 {
+  width: 40%;
+}
+
+html body .top .navbar .container .col-40 .line {
+  width: 1px;
+  height: 43px;
+  opacity: 0.4;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 667px) {
+  html body .top .navbar .container .col-40 .text-decoration-none h5, html body .top .navbar .container .col-40 .text-decoration-none p {
+    color: #222124 !important;
+  }
+}
+
+html body .top .header {
+  width: 100%;
+}
+
+html body .top .header .header-title {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 85px;
+  margin-top: 124px;
+  color: #222124;
+}
+
+@media (max-width: 667px) {
+  html body .top .header .header-title {
+    margin-top: 35px;
+    font-size: 36px;
+    line-height: 44px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+html body .top .header .header-description {
+  font-size: 18px;
+  line-height: 32px;
+  color: #222124;
+}
+
+@media (max-width: 667px) {
+  html body .top .header .header-description {
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+html body .top .header .row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 667px) {
+  html body .top .header .row .col-6 {
+    display: none !important;
+  }
+}
+
+html body .top .header .row .col-6 .card {
+  width: 255px;
+  height: 200px;
+  background: linear-gradient(315.49deg, #FFC85C 1.32%, #F1B301 96.68%);
+  border-radius: 12px;
+  padding: 20px 20px;
+  position: relative;
+  margin-top: 66px;
+}
+
+html body .top .header .row .col-6 .card .btn {
+  width: 120px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.203344);
+  border-radius: 19px;
+  color: #fff;
+  margin-bottom: 56px;
+  border: 0;
+}
+
+html body .top .header .row .col-6 .card h3 {
+  font-size: 34px;
+  line-height: 32px;
+  color: #E76A06;
+}
+
+html body .top .header .row .col-6 .card .pizza-half, html body .top .header .row .col-6 .card .kombo-half {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+html body .top .header .row .col-6 .kombo {
+  background: #800A7A;
+  border-radius: 12px;
+}
+
+html body .top .header .row .col-6 .kombo .btn {
+  width: 174px;
+}
+
+html body .top .header .row .col-6 .kombo h3 {
+  color: #FC96F7;
+}
+
+html body .top .header .col-12 .big-burger {
+  width: 887px;
+  height: 100%;
+  margin-top: 68px;
+  margin-left: -130px;
+  margin-bottom: 0;
+}
+
+html body .top .header .col-12 .big-burger-mobi {
+  width: 100%;
+  margin-top: 10%;
+}
+
+@media (max-width: 667px) {
+  html body .container .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    overflow-x: scroll;
+  }
+}
+
+html body .container .row .col-6 .card {
+  width: 255px;
+  height: 200px;
+  background: linear-gradient(315.49deg, #FFC85C 1.32%, #F1B301 96.68%);
+  border-radius: 12px;
+  padding: 20px 20px;
+  position: relative;
+  margin-top: 66px;
+}
+
+@media (max-width: 667px) {
+  html body .container .row .col-6 .card {
+    margin-top: 23px;
+  }
+}
+
+html body .container .row .col-6 .card .btn {
+  width: 120px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.203344);
+  border-radius: 19px;
+  color: #fff;
+  margin-bottom: 56px;
+  border: 0;
+}
+
+html body .container .row .col-6 .card h3 {
+  font-size: 34px;
+  line-height: 32px;
+  color: #E76A06;
+}
+
+html body .container .row .col-6 .card .pizza-half, html body .container .row .col-6 .card .kombo-half {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+html body .container .row .col-6 .kombo {
+  background: #800A7A;
+  border-radius: 12px;
+}
+
+@media (max-width: 667px) {
+  html body .container .row .col-6 .kombo {
+    margin-left: 35% !important;
+  }
+}
+
+html body .container .row .col-6 .kombo .btn {
+  width: 174px;
+}
+
+html body .container .row .col-6 .kombo h3 {
+  color: #FC96F7;
+}
+
+html body .main {
+  width: 100%;
+}
+
+html body .main .container .line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #979797;
+  opacity: 0.2;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 667px) {
+  html body .main .container .row .col-12 .nav-pills {
+    overflow-x: scroll !important;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+html body .main .container .row .col-12 .nav-pills .nav-item .active {
+  width: 100%;
+  height: 45px;
+  border-radius: 27px;
+  background-color: #F1B301;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff !important;
+}
+
+html body .main .container .row .col-12 .nav-pills .nav-item .nav-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #222124;
+}
+
+html body .main .container .row .col-12 .nav-pills .nav-item .btn {
+  width: 160px;
+  height: 45px;
+  background-color: #f5f5f5;
+  border-radius: 27px;
+}
+
+html body .main .container .row .col-12 .btn-block {
+  width: 100%;
+  height: 45px;
+  background-color: #f1f1f1;
+  border-radius: 27px;
+  margin-top: 14px;
+}
+/*# sourceMappingURL=main.css.map */
